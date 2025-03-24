@@ -1,0 +1,358 @@
+---
+import { Image } from "astro:assets";
+import HeroBG from "../images/hero_bg2.jpg";
+---
+
+<section>
+  <div class="max-w-screen 2xl:max-w-400 mx-auto px-8 pt-12 lg:px-8">
+    <div class="relative isolate flex flex-col items-start overflow-hidden bg-black p-8 lg:p-12 lg:pt-16">
+      <!-- <Image
+        src={HeroBG}
+        alt='Hero background'
+        class='absolute inset-0 object-cover object-top size-full -z-10'
+      /> -->
+      <Image src={HeroBG} alt="#_" width="800" loading="lazy" decoding="async" class="absolute inset-0 -z-10 size-full object-cover object-top" />
+      <div class="absolute inset-0 -z-10 bg-white opacity-80"></div>
+      <div class="lg:gap-50 flex h-full flex-col justify-between gap-20">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+          <h1 class="text-balance text-lg font-light sm:text-xl md:text-xl">Services for healthier, more sustainable, and more profitable buildings.</h1>
+          <div class="col-span-full lg:row-start-4">
+            <h3 class="leading-12 font-display text-balance indent-8 text-lg font-light leading-tight tracking-tight sm:text-xl md:text-2xl lg:indent-48 lg:text-3xl lg:leading-10" id="heroText" style="opacity: 1;">Experts on BREEAM, LEED & EU Taxonomy</h3>
+          </div>
+        </div>
+        <div class="lg:ml-auto">
+          <a href="#" class="hover:text-base-400 text-black">
+            <svg class="h-10 lg:h-20" viewBox="0 0 15 71" fill="none" xmlns="http://www.w3.org/800/svg">
+              <g clip-path="url(#clip0_3025_6)">
+                <path
+                  d="M8.50005 0.996094C8.50005 0.443809 8.05233 -0.00390625 7.50005 -0.00390625C6.94777 -0.00390625 6.50005 0.443809 6.50005 0.996094H8.50005ZM6.79294 69.7737C7.18347 70.1643 7.81663 70.1643 8.20716 69.7737L14.5711 63.4098C14.9616 63.0192 14.9616 62.3861 14.5711 61.9956C14.1806 61.605 13.5474 61.605 13.1569 61.9956L7.50005 67.6524L1.84315 61.9956C1.45265 61.605 0.819552 61.605 0.428952 61.9956C0.0384522 62.3861 0.0384522 63.0192 0.428952 63.4098L6.79294 69.7737ZM6.50005 0.996094L6.50005 69.0666H8.50005L8.50005 0.996094H6.50005Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_3025_6">
+                  <rect width="71" height="15" fill="white" transform="matrix(0 1 -1 0 15 0)"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+
+  <div class="col-span-2 grid grid-cols-2 grid-rows-1 gap-8">
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It is a long established fact that a reader will be distracted</h3>
+      <p class="text-zinc-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It was popularised</h3>
+      <p class="text-zinc-500">Lorem Ipsum has been the industry's standard dummy text ever since the 800s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">Lorem Ipsum is simply dummy text of the printing</h3>
+      <p class="text-zinc-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
+      <p class="text-zinc-500">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+    </div>
+  </div>
+</div>
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-4 grid-rows-1 gap-8">
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It is a long established fact that a reader will be distracted</h3>
+      <p class="text-zinc-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It was popularised</h3>
+      <p class="text-zinc-500">Lorem Ipsum has been the industry's standard dummy text ever since the 800s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
+      <p class="text-zinc-500">It is a long established fact that a reader</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">Where can I get some?</h3>
+      <p class="text-zinc-500">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+    </div>
+  </div>
+</div>
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-1 grid-rows-1 gap-8">
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It is a long established fact that a reader will be distracted</h3>
+      <p class="text-zinc-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="row-span-2 grid grid-rows-subgrid gap-[1px]">
+      <h3 class="text-2xl">It was popularised</h3>
+      <p class="text-zinc-500">Lorem Ipsum has been the industry's standard dummy text ever since the 800s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-1 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-2 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-3 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-4 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-2 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="col-span-2 grid grid-cols-4 grid-rows-1 gap-[1px]">
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+    <div class="aspect-square bg-gray-300"></div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="dark:divide-base-800 dark:border-base-800 flex flex-col divide-y divide-base-200 border-y border-base-200 sm:col-span-2 lg:col-span-2">
+    <div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(01)</span> BREEAM
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">We create cohesive visual identities that define your brand’s essence, ensuring a lasting impression across all touchpoints.</h4>
+      </div>
+    </div><div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(02)</span> LEED
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">From websites to digital experiences, our designs prioritize clarity, usability, and aesthetics to engage and convert audiences.</h4>
+      </div>
+    </div><div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(03)</span> EU Taxonomy
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">Through thoughtful composition, typography, and imagery, we shape the visual language that makes your brand stand out.</h4>
+      </div>
+    </div><div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(04)</span> Building simulation & moodeling
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">We design tactile experiences that bring brands to life, from packaging to editorial layouts, balancing form and function.</h4>
+      </div>
+    </div><div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(05)</span> ESG audit of a building
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">Beyond visuals, we help define your brand’s voice and messaging, aligning every detail with your core identity and goals.</h4>
+      </div>
+    </div><div class="grid grid-cols-1 py-4 lg:grid-cols-3">
+      <h4 class="text-base-900 aos-init aos-animate text-balance text-base font-medium tracking-tight" data-aos="fade-up">
+        <span>(06)</span> Sustainable urban planning
+      </h4>
+      <div class="overflow-hidden lg:col-span-2">
+        <h4 class="dark:text-base-400 text-base-600 aos-init aos-animate text-base" data-aos="fade-up">We offer tailored guidance and workshops to refine your brand’s direction, ensuring clarity and impact at every stage.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+<section>
+  <div class="mx-auto max-w-7xl px-8 py-24 lg:px-24" data-aos="fade-up">
+    <div class="flex flex-col gap-4 md:flex-row">
+      <h3 class="text-2xl font-medium text-black md:text-3xl lg:text-4xl xl:text-6xl">At SALVIS, our mission is to create sustainable and innovative solutions.<br /> Our process is intentional, refined, and deeply collaborative.</h3>
+      <p class="dark:lg:border-base-800 2 border-base-200 text-sm font-medium text-black lg:w-1 lg:border-l-2 lg:pl-4">Samuel Sura, CEO</p>
+    </div>
+  </div>
+</section>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+
+<div class="grid grid-cols-3 px-8 pt-12" data-aos="fade-up">
+  <div>
+    <div class="text-2xl font-light text-green-700">Section title</div>
+    <div class="text-zinc-500">Subtitle</div>
+  </div>
+  <div class="dark:divide-base-700 dark:border-base-700 col-span-2 flex flex-col divide-y divide-base-300 border-b border-base-300">
+    <div class="grid grid-cols-1 gap-1 pb-8 md:grid-cols-2">
+      <h3 class="text-base-900 text-4xl font-medium tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">BREEAM</h3>
+      <div class="mt-2 grid grid-cols-1 gap-1 md:grid-cols-2">
+        <a href="/system/overview" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Logistics </a><a href="/system/links" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> References </a><a
+          href="/system/buttons"
+          class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"
+        >
+          Offices
+        </a><a href="/system/colors" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Accreditations </a><a href="/system/typography" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Residential </a>
+      </div>
+    </div><div class="grid grid-cols-1 gap-1 py-8 md:grid-cols-2">
+      <h3 class="text-base-900 text-4xl font-medium tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">LEED</h3>
+      <div class="mt-2 grid grid-cols-1 gap-1 md:grid-cols-2">
+        <a href="/system/overview" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Logistics </a><a href="/system/links" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> References </a><a
+          href="/system/buttons"
+          class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"
+        >
+          Offices
+        </a><a href="/system/colors" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Accreditations </a><a href="/system/typography" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Residential </a>
+      </div>
+    </div><div class="grid grid-cols-1 gap-1 py-8 md:grid-cols-2">
+      <h3 class="text-base-900 text-4xl font-medium tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">EU Taxonomy</h3>
+      <div class="mt-2 grid grid-cols-1 gap-1 md:grid-cols-2">
+        <a href="/system/overview" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Logistics </a><a href="/system/links" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> References </a><a
+          href="/system/buttons"
+          class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"
+        >
+          Offices
+        </a><a href="/system/colors" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Accreditations </a><a href="/system/typography" class="text-base-700 hover:text-accent-500 dark:hover:text-accent-300 dark:text-base-400 text-sm duration-500"> Residential </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- divider -->
+<div class="py-12"></div>
+<!-- divider -->
+
+<div class="flex flex-col gap-8 p-8" data-aos="fade-up">
+  <div class="border-base-700 border-t pt-2">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div>Accreditations</div>
+      <nav role="navigation" class="col-span-2">
+        <ul class="divide-base-700 flex flex-col divide-y font-medium" role="list">
+          <li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● LEED AP BD+C</p> <p class="ml-auto text-xs lg:ml-0">Johan Lindström</p></li><li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● BREEAM International Assessor</p> <p class="ml-auto text-xs lg:ml-0">Yuki Tanaka</p></li><li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2">
+            <p class="text-xs">● BREEAM In Use Assessor</p>
+            <p class="ml-auto text-xs lg:ml-0">Giulia Rossi</p>
+          </li><li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● LEED Green Associate</p> <p class="ml-auto text-xs lg:ml-0">Carlos Hernández</p></li><li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● LEED AP BD+C</p> <p class="ml-auto text-xs lg:ml-0">Hiroshi Nakamura</p></li>
+        </ul>
+      </nav>
+    </div>
+  </div><div class="border-base-700 border-t pt-2">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div>Awards</div>
+      <nav role="navigation" class="col-span-2">
+        <ul class="divide-base-700 flex flex-col divide-y font-medium" role="list">
+          <li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● Awwards</p> <p class="ml-auto text-xs lg:ml-0">First sustainable building ever</p></li><li class="grid grid-cols-2 gap-4 py-1 lg:grid-cols-2"><p class="text-xs">● TCSSDA</p> <p class="ml-auto text-xs lg:ml-0">Most sustainable building in Europe</p></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

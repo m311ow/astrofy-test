@@ -1,0 +1,98 @@
+---
+const changelogEntries = {
+  BREEAM: [
+    {
+      title: "Name of the project",
+      imgSrc: "https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg",
+      link: "#",
+      year: "2025",
+    },
+    {
+      title: "Name of the project",
+      imgSrc: "https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg",
+      link: "#",
+      year: "2025",
+    },
+    {
+      title: "Name of the project",
+      imgSrc: "https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg",
+      link: "#",
+      year: "2025",
+    },
+    {
+      title: "Name of the project",
+      imgSrc: "https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg",
+      link: "#",
+      year: "2025",
+    },
+  ],
+  LEED: [
+    {
+      title: "Teams support",
+      imgSrc: "https://i.pinimg.com/736x/70/25/f6/7025f63ebdd1caa11b47889c4c4d8fcd.jpg",
+      link: "#",
+      year: "2025",
+    },
+    {
+      title: "Teams support",
+      imgSrc: "https://i.pinimg.com/736x/70/25/f6/7025f63ebdd1caa11b47889c4c4d8fcd.jpg",
+      link: "#",
+      year: "2025",
+    },
+    {
+      title: "Teams support",
+      imgSrc: "https://i.pinimg.com/736x/70/25/f6/7025f63ebdd1caa11b47889c4c4d8fcd.jpg",
+      link: "#",
+      year: "2025",
+    },
+  ],
+};
+---
+
+<section>
+  <div class="prose prose-sm mx-auto max-w-5xl space-y-24 divide-y px-8 py-24 text-zinc-500 prose-headings:text-xl prose-headings:font-normal md:px-12 lg:px-16">
+    <div>
+      <h1>Changelog</h1>
+      <p class="text-balance">Explore the latest update featuring essential performance enhancements, new customization options, and critical bug fixes across our theme collection.</p>
+    </div>
+    <!--
+            // Assuming `changelogEntries` is an array where each object contains the date, image, title, and description of a changelog entry.
+            // Start of the component.
+            // This component dynamically generates a list of changelog entries using the `changelogEntries` array.
+            //
+            // This div is responsible for the sticky behavior of the date. It uses Tailwind's 'sticky' utility class.
+                <div class="lg:sticky pb-16 top-0">
+                    The key class here is 'lg:sticky', which applies sticky positioning at the large breakpoint and above.
+                 'pb-16 top-0' adds padding at the bottom and positions the sticky element at the top of the viewport when it reaches it during scrolling.
+
+                </div>
+-->
+    {
+      Object.entries(changelogEntries).map(([category, entries]) => (
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
+          <div>
+            <div class="top-0 lg:sticky lg:pb-16">
+              <div class="pt-8 text-green-700">
+                <p>{category}</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 lg:col-span-2">
+            {entries.map((entry) => (
+              <div class="mb-24 flex-shrink-0" data-aos="fade-up">
+                <div class="mx-auto">
+                  <img class="aspect-[4/3] object-cover" src={entry.imgSrc} alt="#_" />
+                  <h1>{entry.title}</h1>
+                  <p class="line-clamp-4">{entry.year}</p>
+                  <p>
+                    <a href="#_">Read more</a>
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
